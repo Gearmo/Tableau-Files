@@ -1,0 +1,973 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='BestBuyAndAmazonReviews' inline='true' name='federated.1bl8rnw12jjm9t13rz1060cobizt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BestBuyAndAmazonReviews' name='textscan.0yajnyk04ss7j813crgx41akfth7'>
+            <connection class='textscan' directory='C:/Users/rusty/Desktop/Coding/Tableau Data Files' filename='BestBuyAndAmazonReviews.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0yajnyk04ss7j813crgx41akfth7' name='BestBuyAndAmazonReviews.csv' table='[BestBuyAndAmazonReviews#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='string' name='asins' ordinal='1' />
+            <column datatype='string' name='brand' ordinal='2' />
+            <column datatype='string' name='categories' ordinal='3' />
+            <column datatype='string' name='colors' ordinal='4' />
+            <column datatype='datetime' name='dateAdded' ordinal='5' />
+            <column datatype='datetime' name='dateUpdated' ordinal='6' />
+            <column datatype='string' name='dimension' ordinal='7' />
+            <column datatype='real' name='ean' ordinal='8' />
+            <column datatype='string' name='imageURLs' ordinal='9' />
+            <column datatype='string' name='keys' ordinal='10' />
+            <column datatype='string' name='manufacturer' ordinal='11' />
+            <column datatype='string' name='manufacturerNumber' ordinal='12' />
+            <column datatype='string' name='name' ordinal='13' />
+            <column datatype='string' name='primaryCategories' ordinal='14' />
+            <column datatype='datetime' name='reviews.date' ordinal='15' />
+            <column datatype='string' name='reviews.dateSeen' ordinal='16' />
+            <column datatype='boolean' name='reviews.doRecommend' ordinal='17' />
+            <column datatype='integer' name='reviews.numHelpful' ordinal='18' />
+            <column datatype='integer' name='reviews.rating' ordinal='19' />
+            <column datatype='string' name='reviews.sourceURLs' ordinal='20' />
+            <column datatype='string' name='reviews.text' ordinal='21' />
+            <column datatype='string' name='reviews.title' ordinal='22' />
+            <column datatype='string' name='reviews.username' ordinal='23' />
+            <column datatype='string' name='sourceURLs' ordinal='24' />
+            <column datatype='real' name='upc' ordinal='25' />
+            <column datatype='string' name='weight' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0yajnyk04ss7j813crgx41akfth7' name='BestBuyAndAmazonReviews.csv' table='[BestBuyAndAmazonReviews#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='id' ordinal='0' />
+            <column datatype='string' name='asins' ordinal='1' />
+            <column datatype='string' name='brand' ordinal='2' />
+            <column datatype='string' name='categories' ordinal='3' />
+            <column datatype='string' name='colors' ordinal='4' />
+            <column datatype='datetime' name='dateAdded' ordinal='5' />
+            <column datatype='datetime' name='dateUpdated' ordinal='6' />
+            <column datatype='string' name='dimension' ordinal='7' />
+            <column datatype='real' name='ean' ordinal='8' />
+            <column datatype='string' name='imageURLs' ordinal='9' />
+            <column datatype='string' name='keys' ordinal='10' />
+            <column datatype='string' name='manufacturer' ordinal='11' />
+            <column datatype='string' name='manufacturerNumber' ordinal='12' />
+            <column datatype='string' name='name' ordinal='13' />
+            <column datatype='string' name='primaryCategories' ordinal='14' />
+            <column datatype='datetime' name='reviews.date' ordinal='15' />
+            <column datatype='string' name='reviews.dateSeen' ordinal='16' />
+            <column datatype='boolean' name='reviews.doRecommend' ordinal='17' />
+            <column datatype='integer' name='reviews.numHelpful' ordinal='18' />
+            <column datatype='integer' name='reviews.rating' ordinal='19' />
+            <column datatype='string' name='reviews.sourceURLs' ordinal='20' />
+            <column datatype='string' name='reviews.text' ordinal='21' />
+            <column datatype='string' name='reviews.title' ordinal='22' />
+            <column datatype='string' name='reviews.username' ordinal='23' />
+            <column datatype='string' name='sourceURLs' ordinal='24' />
+            <column datatype='real' name='upc' ordinal='25' />
+            <column datatype='string' name='weight' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>asins</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[asins]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>asins</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[brand]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>brand</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categories</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categories]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>categories</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>colors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[colors]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>colors</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dateAdded</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[dateAdded]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>dateAdded</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dateUpdated</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[dateUpdated]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>dateUpdated</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dimension</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dimension]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>dimension</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ean</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ean]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>ean</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imageURLs</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[imageURLs]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>imageURLs</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>keys</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[keys]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>keys</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>manufacturer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[manufacturer]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>manufacturer</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>manufacturerNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[manufacturerNumber]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>manufacturerNumber</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>primaryCategories</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[primaryCategories]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>primaryCategories</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[reviews.date]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>reviews.date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.dateSeen</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.dateSeen]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>reviews.dateSeen</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.doRecommend</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[reviews.doRecommend]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>reviews.doRecommend</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.numHelpful</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reviews.numHelpful]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>reviews.numHelpful</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reviews.rating]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>reviews.rating</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.sourceURLs</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.sourceURLs]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>reviews.sourceURLs</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.text]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>reviews.text</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.title]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>reviews.title</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.username]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>reviews.username</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sourceURLs</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sourceURLs]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>sourceURLs</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>upc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[upc]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>upc</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[weight]</local-name>
+            <parent-name>[BestBuyAndAmazonReviews.csv]</parent-name>
+            <remote-alias>weight</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='BestBuyAndAmazonReviews.csv' datatype='table' name='[__tableau_internal_object_id__].[BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6]' role='measure' type='quantitative' />
+      <column caption='Asins' datatype='string' name='[asins]' role='dimension' type='nominal' />
+      <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+      <column caption='Categories' datatype='string' name='[categories]' role='dimension' type='nominal' />
+      <column caption='Colors' datatype='string' name='[colors]' role='dimension' type='nominal' />
+      <column caption='Date Added' datatype='datetime' name='[dateAdded]' role='dimension' type='ordinal' />
+      <column caption='Date Updated' datatype='datetime' name='[dateUpdated]' role='dimension' type='ordinal' />
+      <column caption='Dimension' datatype='string' name='[dimension]' role='dimension' type='nominal' />
+      <column caption='Ean' datatype='real' name='[ean]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column caption='Image UR Ls' datatype='string' name='[imageURLs]' role='dimension' type='nominal' />
+      <column caption='Keys' datatype='string' name='[keys]' role='dimension' type='nominal' />
+      <column caption='Manufacturer Number' datatype='string' name='[manufacturerNumber]' role='dimension' type='nominal' />
+      <column caption='Manufacturer' datatype='string' name='[manufacturer]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Primary Categories' datatype='string' name='[primaryCategories]' role='dimension' type='nominal' />
+      <column caption='Reviews.Date' datatype='datetime' name='[reviews.date]' role='dimension' type='ordinal' />
+      <column caption='Reviews.Rating' datatype='integer' name='[reviews.rating]' role='measure' type='quantitative' />
+      <column caption='Reviews.Text' datatype='string' name='[reviews.text]' role='dimension' type='nominal' />
+      <column caption='Reviews.Title' datatype='string' name='[reviews.title]' role='dimension' type='nominal' />
+      <column caption='Reviews.Username' datatype='string' name='[reviews.username]' role='dimension' type='nominal' />
+      <column caption='Source UR Ls' datatype='string' name='[sourceURLs]' role='dimension' type='nominal' />
+      <column caption='Upc' datatype='real' name='[upc]' role='measure' type='quantitative' />
+      <column caption='Weight' datatype='string' name='[weight]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='BestBuyAndAmazonReviews.csv' id='BestBuyAndAmazonReviews.csv_B262FD6707C744F4940D6E370455B0D6'>
+            <properties context=''>
+              <relation connection='textscan.0yajnyk04ss7j813crgx41akfth7' name='BestBuyAndAmazonReviews.csv' table='[BestBuyAndAmazonReviews#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='id' ordinal='0' />
+                  <column datatype='string' name='asins' ordinal='1' />
+                  <column datatype='string' name='brand' ordinal='2' />
+                  <column datatype='string' name='categories' ordinal='3' />
+                  <column datatype='string' name='colors' ordinal='4' />
+                  <column datatype='datetime' name='dateAdded' ordinal='5' />
+                  <column datatype='datetime' name='dateUpdated' ordinal='6' />
+                  <column datatype='string' name='dimension' ordinal='7' />
+                  <column datatype='real' name='ean' ordinal='8' />
+                  <column datatype='string' name='imageURLs' ordinal='9' />
+                  <column datatype='string' name='keys' ordinal='10' />
+                  <column datatype='string' name='manufacturer' ordinal='11' />
+                  <column datatype='string' name='manufacturerNumber' ordinal='12' />
+                  <column datatype='string' name='name' ordinal='13' />
+                  <column datatype='string' name='primaryCategories' ordinal='14' />
+                  <column datatype='datetime' name='reviews.date' ordinal='15' />
+                  <column datatype='string' name='reviews.dateSeen' ordinal='16' />
+                  <column datatype='boolean' name='reviews.doRecommend' ordinal='17' />
+                  <column datatype='integer' name='reviews.numHelpful' ordinal='18' />
+                  <column datatype='integer' name='reviews.rating' ordinal='19' />
+                  <column datatype='string' name='reviews.sourceURLs' ordinal='20' />
+                  <column datatype='string' name='reviews.text' ordinal='21' />
+                  <column datatype='string' name='reviews.title' ordinal='22' />
+                  <column datatype='string' name='reviews.username' ordinal='23' />
+                  <column datatype='string' name='sourceURLs' ordinal='24' />
+                  <column datatype='real' name='upc' ordinal='25' />
+                  <column datatype='string' name='weight' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BestBuyAndAmazonReviews' name='federated.1bl8rnw12jjm9t13rz1060cobizt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bl8rnw12jjm9t13rz1060cobizt'>
+            <column caption='Brand' datatype='string' name='[brand]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[brand]' derivation='None' name='[none:brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column caption='Reviews.Rating' datatype='integer' name='[reviews.rating]' role='measure' type='quantitative' />
+            <column-instance column='[reviews.rating]' derivation='Sum' name='[sum:reviews.rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1bl8rnw12jjm9t13rz1060cobizt].[none:brand:nk] / [federated.1bl8rnw12jjm9t13rz1060cobizt].[none:name:nk])</rows>
+        <cols>[federated.1bl8rnw12jjm9t13rz1060cobizt].[sum:reviews.rating:qk]</cols>
+      </table>
+      <simple-id uuid='{4D5972A0-BB85-4FAF-97A5-98B1FD905C6D}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bl8rnw12jjm9t13rz1060cobizt].[none:categories:nk]</field>
+            <field>[federated.1bl8rnw12jjm9t13rz1060cobizt].[none:dimension:nk]</field>
+            <field>[federated.1bl8rnw12jjm9t13rz1060cobizt].[none:manufacturer:nk]</field>
+            <field>[federated.1bl8rnw12jjm9t13rz1060cobizt].[none:name:nk]</field>
+            <field>[federated.1bl8rnw12jjm9t13rz1060cobizt].[none:reviews.doRecommend:nk]</field>
+            <field>[federated.1bl8rnw12jjm9t13rz1060cobizt].[none:reviews.title:nk]</field>
+            <field>[federated.1bl8rnw12jjm9t13rz1060cobizt].[yr:reviews.date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{668CA187-6313-4EC5-B3FA-669D31125241}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
